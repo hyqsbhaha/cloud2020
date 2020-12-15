@@ -106,7 +106,7 @@ public class PaymentController {
         User result = new User();
         if(null != o){
             result = (User)serializeUtil.deserialize(o);
-            System.out.println("---redis查到数据了！---"+result);
+            System.out.println("---redis查到数据 了！---"+result);
         }
 
         if(null == o){
@@ -120,4 +120,6 @@ public class PaymentController {
         }
         return new CommonResult(404,"账号不存在"+serverPort,null);
     }
+
+
 }
